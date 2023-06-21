@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Fundo */
+body{
+   background: #000000;
+}
+/* faixa preta */
+ header{
+    background:rgba(124, 121, 121, 0.15);
+    backdrop-filter:blur(5px) ;
+    box-shadow: 0 0 10px 1px rgba(99,6,6,1);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    height: 18vh;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+ }
+ /* nome da loja */
+ h1{
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 50px;
+    padding-top: 40px;   
+    font-size: 60px;
+ }
+ /* items para navegação */
+ nav ul{
+    list-style: none;
+    float: right;
+    padding-top: 15px;
+    
+ }
+ nav ul li{
+    float: left;
+    padding: 15px;
+    margin: 20px;
+ }
+ a:link, a:active, a:visited{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    text-decoration: none;
+ }
+a:hover{
+    color: #890F0D;
+    transition: 0.4s all;
+}
+#visitado{
+   border: 2px solid  rgba(99,6,6,1);
+   padding: 20px;
+   border-radius: 20px;
+   background: radial-gradient(circle, rgba(137,15,13,1) 22%, rgba(99,6,6,1) 85%);
+   color: #ffffff;
+}
+
+/* parallax */
+section{
+    width: 100%;
+    height: 300px;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section:nth-of-type(1){ /*esta falando para selecionar o primeiro elemento em html com o nome section*/
+    background-image: url(./wepik-export-20230618052345XdVb.jpeg);
+    height: 800px;
+}   
+section:nth-of-type(3){ /*esta falando para selecionar o primeiro elemento em html com o nome section*/
+    background-image: url(./wepik-export-20230618055025o74G.jpeg);
+    height: 800px;
+}  
+section:nth-of-type(5){ /*esta falando para selecionar o primeiro elemento em html com o nome section*/
+    background-image: url(./wepik-export-20230618062734D5na.jpeg);
+    height: 800px;
+}  
+
+/* texto */
+h2{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 15px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.texto{
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 53px;
+}
+
+#cont{
+    text-align: center;
+}
+
+p{
+    padding-left: 50px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    color: white;
+}
+
+/* corrimão/scroolbar */
+::-webkit-scrollbar{
+    width: 15px;
+    background:rgba(218, 56, 56, 0.15);
+    backdrop-filter:blur(16px) ;
+    border-radius: 45px;
+
+}
+/* botão-corrimão/scroolbar */
+::-webkit-scrollbar-thumb{
+    width: 15px;
+    background-color: #890F0D;
+    border-radius: 45px;
+}
+/* imagem */
+#loc{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding-top: 145px;
+    padding-right: 140px;
+    padding-left: 140px;
+}
+
+#loc p{
+  position: relative;
+  right: 20px;
+}
+
+/* imagem carrossel */
+section.slider{
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input{
+    display: none;
+}
+.slider-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.slider-box img{
+    width: 800px;
+
+}
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+    padding-right: 500px;
+
+}
+.nav-manual .manual-btn, .nav-auto div {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}   
+
+.nav-manual .manual-btn:hover{
+    background-color: #ffffff;
+}
+
+#radio1:checked ~ .nav-auto .auto-bnt1, #radio1:checked ~ .nav-auto .auto-bnt2, #radio1:checked ~ .nav-auto .auto-bnt3 {
+    background-color: #ffffff;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+/*  */
+iframe{
+    padding-left: 100px;
+    padding-top: 25px;
+}
